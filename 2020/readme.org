@@ -1,0 +1,19 @@
+#+TITLE: Readme
+
+
+For each day from 1 to 25, I'll write four pieces of code with the following format (and perhaps some auxiliary code)
+For day 3:
+
+- ~in3: List[str] = data(3)~
+  The day's input data, parsed into an appropriate form (here, a list of string lines)
+
+- ~def day3_1(nums):...~
+  A function that takes the day's data as input and returns the answer for part 1.
+
+- ~def day3_2(nums):...~
+  A function that takes the day's data as input and returns the answer for part 2.
+
+- ~do(3)~:
+  runs ==day3_1(in3)==
+  I'll then use the result to hopefully unlock part 2 and define day3_2, which also gets run when I call do(3) again.
+  Once I verify both answers, I'll change do(3) to do(3, 167, 736527114) to serve as a unit test.
