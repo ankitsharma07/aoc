@@ -39,3 +39,6 @@ if __name__ == '__main__':
         data = parse(f.read())
 
     print(max(elf.calories() for elf in data))
+
+    # print the calories of first three elves
+    print(sum(elf.calories() for elf in sorted(data, key=lambda x: x.calories(), reverse=True)[:3]))
